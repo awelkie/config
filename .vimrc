@@ -1,5 +1,6 @@
 syntax on
 set nocompatible
+filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -13,3 +14,13 @@ map <S-Q> <nop>
 set autoindent
 set cindent
 set smarttab
+set switchbuf=usetab,newtab
+
+"newlines without insert mode
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+
+"because we can't use fish
+set shell=/bin/bash
+
+"yum install syntastic
