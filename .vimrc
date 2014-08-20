@@ -15,6 +15,8 @@ set autoindent
 set cindent
 set smarttab
 set switchbuf=usetab,newtab
+set foldmethod=syntax
+set foldlevelstart=20
 
 "newlines without insert mode
 nmap <S-Enter> O<Esc>
