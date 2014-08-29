@@ -1,6 +1,15 @@
-syntax on
 set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
 filetype plugin indent on
+
+syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
