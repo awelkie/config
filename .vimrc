@@ -22,6 +22,10 @@ set foldlevelstart=20
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+"hilight trailing whitespace
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\s\+\%#\@<!$/
+
 "because we can't use fish
 set shell=/bin/bash
 
