@@ -17,6 +17,7 @@ set smarttab
 set switchbuf=usetab,newtab
 set foldmethod=syntax
 set foldlevelstart=20
+set tags=tags;
 
 "newlines without insert mode
 nmap <S-Enter> O<Esc>
