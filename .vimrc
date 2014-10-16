@@ -23,6 +23,9 @@ set tags=tags;
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+"This opens a tag in a new tab
+nmap <C-\> <C-w><C-]><C-w>T
+
 "hilight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+\%#\@<!$/
