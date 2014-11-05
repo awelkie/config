@@ -5,6 +5,9 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
