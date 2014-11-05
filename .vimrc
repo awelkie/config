@@ -13,6 +13,8 @@ set linebreak
 map <S-Q> <nop>
 set autoindent
 set cindent
+set ignorecase
+set smartcase
 set smarttab
 set switchbuf=usetab,newtab
 set foldmethod=syntax
