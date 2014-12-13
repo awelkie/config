@@ -49,4 +49,10 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 "because we can't use fish
 set shell=/bin/bash
 
-"yum install syntastic
+" call with ':call StripTrailingWhitespaces()'
+fun! StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
