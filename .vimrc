@@ -10,6 +10,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -42,20 +44,13 @@ nmap <CR> o<Esc>
 "This opens a tag in a new tab
 nmap <C-\> <C-w><C-]><C-w>T
 
-"hilight trailing whitespace
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+\%#\@<!$/
-
 "because we can't use fish
 set shell=/bin/bash
 
-" call with ':call StripTrailingWhitespaces()'
-fun! StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_max_diagnostics_to_display = 100
+let g:ycm_confirm_extra_conf = 0
