@@ -20,7 +20,7 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-colorscheme torte
+colorscheme desert
 set incsearch
 set hlsearch
 set showcmd
