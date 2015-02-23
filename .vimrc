@@ -12,6 +12,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'mileszs/ack.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-scripts/ZoomWin'
 
 call vundle#end()
 filetype plugin indent on
@@ -55,3 +57,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_max_diagnostics_to_display = 100
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+" Remap <C-w>z to zoom window
+nnoremap <silent> <C-w>z :ZoomWin<CR>
