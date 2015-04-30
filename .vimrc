@@ -15,6 +15,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'mileszs/ack.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/ZoomWin'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
