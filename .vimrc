@@ -23,7 +23,6 @@ filetype plugin indent on
 syntax on
 set tabstop=4
 set shiftwidth=4
-set expandtab
 colorscheme desert
 set incsearch
 set hlsearch
@@ -40,6 +39,7 @@ set switchbuf=usetab,newtab
 set foldmethod=syntax
 set foldlevelstart=20
 set tags=tags;
+set expandtab
 
 "newlines without insert mode
 nmap <S-Enter> O<Esc>
