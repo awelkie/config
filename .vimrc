@@ -40,6 +40,7 @@ set foldmethod=syntax
 set foldlevelstart=20
 set tags=tags;
 set expandtab
+set mouse=a
 
 "newlines without insert mode
 nmap <S-Enter> O<Esc>
