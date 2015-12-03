@@ -16,6 +16,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/ZoomWin'
 Plugin 'rust-lang/rust.vim'
+Plugin 'rhysd/vim-clang-format'
 
 call vundle#end()
 filetype plugin indent on
