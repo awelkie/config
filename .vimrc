@@ -8,6 +8,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-commentary'
 Plugin 'benekastah/neomake'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
@@ -31,6 +32,8 @@ Plugin 'vim-scripts/sudo.vim'
 
 call vundle#end()
 filetype plugin indent on
+
+set rtp+=~/.fzf
 
 syntax on
 set tabstop=4
@@ -80,8 +83,6 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_max_diagnostics_to_display = 100
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-let g:ycm_rust_src_path = '/home/allen/repos/rust/src'
 nnoremap gd :YcmCompleter GoTo<CR>
 
 autocmd! BufWritePost * Neomake
