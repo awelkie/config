@@ -15,6 +15,7 @@ Plug 'wellle/targets.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Numkil/ag.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -59,5 +60,13 @@ set termguicolors
 
 let g:ale_linters = { 'rust': ['rls'] }
 let g:ale_rust_rls_toolchain = 'stable'
+" let g:ale_completion_enabled = 1
+
+nn <silent> <M-d> :ALEGoToDefinition<cr>
+nn <silent> <M-r> :ALEFindReferences<cr>
+nn <silent> <M-a> :ALESymbolSearch<cr>
+nn <silent> <M-h> :ALEHover<cr>
 
 let g:ctrlp_user_command = 'fd --color=never "" %s'
+
+let g:deoplete#enable_at_startup = 1
